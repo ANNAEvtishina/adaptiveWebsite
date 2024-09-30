@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Website</title>
+<link rel="stylesheet" href="style.css">
+<link rel="favicon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header class="header">
+<div class="header__logo">Logo</div>
+<nav class="header__nav">
+<ul class="header__list">
+<li class="header__item"><a class="header__link"
+href="#">Home</a></li>
+<li class="header__item"><a class="header__link"
+href="#">About</a></li>
+<li class="header__item"><a class="header__link"
+href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main class="content">
+<section class="content__intro">
+<h1>Welcome to Adaptive Website</h1>
+<p>This is a responsive page with adaptive images, custom fonts,
+and a favicon.</p>
+</section>
+<section class="content__image">
+    <img src="img/food1.jpg" alt="food1"
+    class="image">
+    </section>
+    <div>
+    <picture>
+        <source media="(max-width: 799px)" srcset="food1">
+        <source media="(min-width: 800px)" srcset="food1">
+        
+      </picture>
+      </div>
+</main>
+<footer class="footer">
+<p>© 2024 Adaptive Website</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

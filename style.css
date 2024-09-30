@@ -1,0 +1,58 @@
+@font-face {
+    font-family:"BebasNeue-Regular"
+    src: url(fonts/BebasNeue-Regular.ttf) format(truetype);
+    font-weight:normal
+    font-style:normal
+
+    }
+    body {
+    font-family: "BebasNeue-Regular"
+
+    }
+    .header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    }
+    .header__nav {
+    display: flex;
+    }
+    .header__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    }
+    .content {
+    padding: 20px;
+    }
+    .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    }
+    .image {
+        max-width: 100%;
+        height: auto;
+        }
+        @media (max-width: 768px) {
+            .header {
+            flex-direction: column;
+            }
+            .header__link {
+            margin: 10px 0;
+            }
+            }
+            .header__logo {
+                position: relative;
+                z-index: 2;
+                }
+                .header__nav {
+                position: absolute;
+                z-index: 1;
+                }
+                
+            
